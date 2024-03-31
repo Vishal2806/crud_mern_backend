@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var schema = new mongoose.Schema({
+var UserSchema = new mongoose.Schema({
     email: {
         type: String,
         required: true,
@@ -15,5 +15,5 @@ var schema = new mongoose.Schema({
     },
     phone: String,
 });
-var user = new mongoose.model('User', schema);
+var user = new mongoose.model('User', UserSchema);
 module.exports = user;
